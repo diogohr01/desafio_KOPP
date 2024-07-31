@@ -34,4 +34,4 @@ Esta aplicação Java recebe uma lista de valores, gera um número sequencial pa
 
    - Os resultados dos testes serão exibidos no terminal.
 
-Se você encontrar algum problema ou precisar de mais informações, consulte a documentação do Maven ou entre em contato com o suporte.
+
