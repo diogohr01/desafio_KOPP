@@ -1,0 +1,28 @@
+INSERT INTO infracao (numero, data_hora, equipamento, velocidade_permitida, velocidade_medida, validade, remessa_id) VALUES
+    (1, '2024-07-01 10:00:00', 'Radar 1', 60.00, 72.00, TRUE, 1),
+    (2, '2024-07-02 11:30:00', 'Radar 2', 80.00, 85.00, TRUE, 1),
+    (3, '2024-07-03 14:15:00', 'Radar 3', 50.00, 65.00, TRUE, 2),
+    (4, '2024-07-04 09:00:00', 'Radar 4', 100.00, 85.00, FALSE, 2),
+    (5, '2024-07-05 16:45:00', 'Radar 5', 70.00, 90.00, TRUE, 3),
+    (6, '2024-07-06 18:30:00', 'Radar 6', 90.00, 100.00, TRUE, 3),
+    (7, '2024-07-07 12:00:00', 'Radar 7', 40.00, 55.00, TRUE, 4);
+
+-- buscar as infrações igual ou acima de 20% da velocidade permitida
+select * from infracao
+where velocidade_medida >= velocidade_permitida * 1.20
+order by data_hora
+
+
+-- buscar cada remessa e apresentar sua identificação, sua situação, o total de infrações, total de infrações válidas e total de infrações inválidas
+SELECT
+    r.id AS remessa_id,
+    r.situacao,
+    COUNT(i.id) AS total_infracoes,
+    SUM(CASE WHEN i.validade THEN 1 ELSE 0 END) AS total_infracoes_validas,
+    SUM(CASE WHEN NOT i.validade THEN 1 ELSE 0 END) AS total_infracoes_invalidas
+FROM remessa r
+LEFT JOIN infracao i ON r.id = i.remessa_id
+GROUP BY r.id, r.situacao
+ORDER BY r.situacao;
+
+
