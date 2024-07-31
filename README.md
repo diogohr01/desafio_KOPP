@@ -47,7 +47,7 @@ Esta aplicação Java recebe uma lista de valores, gera um número sequencial pa
 
 
 2. **Insert e Queries da atividade**:
-    -O insert e as queries estão no arquivo de texto na pasta principal chamada:
+    - O insert e as queries estão no arquivo de texto na pasta principal chamada:
     
     ### queries.txt
     
