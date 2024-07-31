@@ -1,3 +1,11 @@
+
+-- Inserção de dados de teste
+INSERT INTO remessa (situacao, total_infracoes) VALUES
+    ('Criada', 3),
+    ('Expedida', 2),
+    ('Aceita', 4),
+    ('Não Aceita', 1);
+
 INSERT INTO infracao (numero, data_hora, equipamento, velocidade_permitida, velocidade_medida, validade, remessa_id) VALUES
     (1, '2024-07-01 10:00:00', 'Radar 1', 60.00, 72.00, TRUE, 1),
     (2, '2024-07-02 11:30:00', 'Radar 2', 80.00, 85.00, TRUE, 1),
