@@ -1,3 +1,5 @@
+# EXERCICIO 1
+
 # Remessa
 
 Esta aplicação Java recebe uma lista de valores, gera um número sequencial para cada valor, e devolve uma String com os sequenciais inteiros concatenados a um texto e ao seu respectivo valor. Ao final, apresenta o total da soma dos valores.
@@ -34,4 +36,19 @@ Esta aplicação Java recebe uma lista de valores, gera um número sequencial pa
 
    - Os resultados dos testes serão exibidos no terminal.
 
+# EXERCICIO 2
 
+## BANCO DE DADOS
+
+1. **Diagrama do SQL**:
+    - O modelo fisico está na pasta principal do código chamado:
+    ```
+    diagram.SQL
+    ```
+
+2. **Insert e Queries da atividade**:
+    -O insert e as queries estão no arquivo de texto na pasta principal chamada:
+    ```
+    queries.txt
+    ```
+    Com o insert, você pode ter uma ideia de como está funcionando as queries e validar que está funcionando corretamente!
