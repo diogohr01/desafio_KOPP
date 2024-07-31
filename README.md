@@ -42,13 +42,13 @@ Esta aplicação Java recebe uma lista de valores, gera um número sequencial pa
 
 1. **Diagrama do SQL**:
     - O modelo fisico está na pasta principal do código chamado:
-    ```
-    diagram.SQL
-    ```
+    
+    ### diagram.SQL
+
 
 2. **Insert e Queries da atividade**:
     -O insert e as queries estão no arquivo de texto na pasta principal chamada:
-    ```
-    queries.txt
-    ```
+    
+    ### queries.txt
+    
     Com o insert, você pode ter uma ideia de como está funcionando as queries e validar que está funcionando corretamente!
